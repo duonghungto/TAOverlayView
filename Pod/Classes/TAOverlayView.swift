@@ -41,7 +41,7 @@ public class TAOverlayView: UIView {
         
         let path = UIBezierPath(rect: self.bounds)
         maskLayer.path = path.cgPath
-        maskLayer.fillRule = kCAFillRuleEvenOdd
+        maskLayer.fillRule = CAShapeLayerFillRule.evenOdd
         
         // Set the mask of the view.
         self.layer.mask = maskLayer
